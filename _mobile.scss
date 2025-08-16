@@ -1,0 +1,162 @@
+@media (max-width: 343px) {
+    .mini-games__cart {
+        width: 100%;
+    }
+
+    .mini-games__cart-img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .hero {
+        height: 649px;
+        background-image: url(img/big-mob.svg), url(img/mob-1.svg), url(img/mob-2.svg), url(img/mob-3.svg), url(img/mob-4.svg);
+        background-repeat: no-repeat;
+        background-position: right -90px top -90px, left 37px top 97px, left 91px top 64px, right 86px top 557px, right 34px top 580px;
+
+        &-main {
+            padding-top: 147px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__title {
+                font-size: 40px;
+                line-height: 49px;
+                text-align: center;
+            }
+
+            &__text {
+                font-size: 16px;
+                line-height: 20px;
+                text-align: center;
+                margin-bottom: 36px;
+            }
+
+            &__button {
+                font-size: 16px;
+                width: 285px;
+                height: 55px;
+
+                &:hover {
+                    color: rgb(255, 255, 255);
+                    border: 1px solid $color-background;
+                    background: $color-background;
+                }
+
+            }
+        }
+    }
+
+    .line-wrapper {
+        height: 51px;
+    }
+
+    .line {
+        gap: 27.4px;
+
+        @keyframes line {
+            0% {
+                transform: translateX(0);
+            }
+
+            50% {
+                transform: translateX(-1700px);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+
+        &__img {
+            width: 19px;
+        }
+    }
+
+    .about-games {
+        display: none;
+    }
+
+    .mini-games {
+        background-image: none;
+        padding-bottom: 10px;
+
+        &__title {
+            padding-top: 48px;
+            padding-bottom: 48px;
+            font-size: 40px;
+            line-height: 49px;
+        }
+
+        &__wrapper {
+            gap: 24px;
+            align-items: center;
+        }
+
+        &__cart {
+            height: unset;
+            display: flex;
+            flex-direction: column-reverse;
+            width: 343px;
+
+            &_mob {
+                display: flex;
+                flex-direction: column;
+            }
+
+            &-left {
+                padding: 29px;
+                padding-bottom: 32px;
+            }
+
+            &-name {
+                font-size: 32px;
+                line-height: 39px;
+                padding-bottom: 16px;
+            }
+
+            &-text {
+                font-size: 16px;
+                line-height: 20px;
+                padding-bottom: 32px;
+            }
+
+            &-button {
+                width: 285px;
+                height: 55px;
+                font-size: 16px;
+
+                &:hover {
+                    color: rgb(255, 255, 255);
+                    border: 1px solid $color-background;
+                    background: $color-background;
+                }
+            }
+
+            &-img {
+                max-width: 343px;
+            }
+        }
+    }
+
+    .footer {
+        height: 100px;
+
+        &__title {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+}

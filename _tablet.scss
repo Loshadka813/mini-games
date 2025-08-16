@@ -1,0 +1,72 @@
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 786px/2);
+        padding-right: calc(50% - 786px/2);
+    }
+
+    .about-games {
+        display: none;
+    }
+
+    .mini-games {
+        background-image: none;
+        padding-bottom: 10px;
+
+        &__title {
+            padding-top: 48px;
+            padding-bottom: 48px;
+            font-size: 40px;
+            line-height: 49px;
+        }
+
+        &__wrapper {
+            gap: 24px;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        &__cart {
+            height: unset;
+            display: flex;
+            flex-direction: column-reverse;
+            width: 343px;
+
+            &_mob {
+                display: flex;
+                flex-direction: column;
+            }
+
+            &-left {
+                padding: 29px;
+                padding-bottom: 32px;
+            }
+
+            &-name {
+                font-size: 32px;
+                line-height: 39px;
+                padding-bottom: 16px;
+            }
+
+            &-text {
+                font-size: 16px;
+                line-height: 20px;
+                padding-bottom: 32px;
+            }
+
+            &-button {
+                width: 285px;
+                height: 55px;
+                font-size: 16px;
+
+                &:hover {
+                    transform: none;
+                }
+            }
+
+            &-img {
+                max-width: 343px;
+            }
+        }
+    }
+}
